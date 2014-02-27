@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="US-ASCII">
+<title>Todo Application</title>
+</head>
+<body>
+
+<h2>Expose Following Endpoints</h2>
+<ul>
+	<li> Ping Resource <a href="http://javaapp-{domain-name}.rhcloud.com/api/v1/ping" target="_blank">http://javaapp-{domain-name}.rhcloud.com/api/v1/</a>
+	<li>
+	<li> To create a Todo item
+	<pre>
+		$	curl -i -X POST -H "Content-Type: application/json" -H "Accept: application/json" -d  '{"todo" : "Learn AngularJS","tags":["angular","learning","book-reading"]}' http://todo-domainname.rhcloud.com/api/v1/todos
+	</pre>
+	<li>
+	<li>
+	To read a Todo item
+	<pre>
+		$ curl http://todo-domainname.rhcloud.com/api/v1/todos/1
+	</pre>
+	</li>
+</ul>
+</body>
+</html>
